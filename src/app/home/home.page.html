@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Todo
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="openTodoAlert()">
+        <ion-icon name="add">
+          
+        </ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-sliding (ionSwipe)="delete(item)">
+      <ion-item>Item</ion-item>
+      <ion-item-options>
+        <button ion-button expandable (click)="delete(item)">Delete</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-list>
+    <ion-item-sliding (ionSwipe)="delete(item)">
+      <ion-item>Abdul</ion-item>
+      <ion-item-options>
+        <button ion-button expandable (click)="delete(item)">Delete</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-list>
+    <ion-item-sliding (ionSwipe)="delete(item)">
+      <ion-item>Salim</ion-item>
+      <ion-item-options>
+        <button ion-button expandable (click)="delete(item)">Delete</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
+
